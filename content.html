@@ -9,13 +9,17 @@
 </div>
 
 <div id="menu">
-    <ul style="width: fit-content;">
+    <ul>
         <li>STRONA GŁÓWNA</li>
         <li>O NAS</li>
-        <li onclick="$('#menuContent').load('widgets/menu/offer.html');">OFERTA</li>
+        <li onclick="$('#menuContent').load('widgets/menu/offer.html');changeContent('offer');">OFERTA <i
+                class="material-icons icons offer">add_box</i></li>
         <li>REALIZACJE</li>
-        <li>ARTYKUŁY</li>
-        <li>KONTAKT</li>
+        <li onclick="$('#menuContent').load('widgets/menu/articles.html'); changeContent('articles');">ARTYKUŁY <i
+                class="material-icons icons articles">add_box</i>
+        </li>
+        <li onclick="$('#menuContent').load('widgets/menu/contact.html'); changeContent('contact');">KONTAKT <i
+                class="material-icons icons contact">add_box</i></li>
     </ul>
-    <div id="menuContent" style="width: 100vh; text-align: center;"></div>
+    <div id="menuContent"></div>
 </div>
